@@ -74,3 +74,14 @@ class LSTMModel(nn.Module):
         out = self.dropout3(out)
         out = self.fc3(out)
         return out
+
+
+
+###  Training and Evaluation
+
+Training: The model was trained for 50 epochs with a batch size of 32.
+Data Split: The dataset was split into training (80%) and testing (20%) sets.
+Metrics:
+Average Training Accuracy: 71.65%
+Average Validation Accuracy: 79.65%
+F1 Scores: Up to 1.00 for most emotions.
